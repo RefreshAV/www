@@ -118,7 +118,7 @@
 
 {{ else }}
 
-    {{ range first 1 (where .Data.Pages "Type" "event") }}
+    {{ range first 1 (where .Site.RegularPages "Type" "event") }}
 
         <article class="article">
 
@@ -176,7 +176,7 @@
                 <h3>Past Events (A Sampling)</h3>
             </div>
             <div class="card-section">
-                {{ range first 8 (where (where .Data.Pages "Type" "event") "Date" "<" now) }}
+                {{ range first 8 (where (where .Site.RegularPages "Type" "event") "Date" "<" now) }}
 
                 <div class="media-object">
                     <div class="media-object-section">
