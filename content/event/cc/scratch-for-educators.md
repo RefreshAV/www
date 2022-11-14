@@ -7,7 +7,7 @@ draft = false
 event_facebook = "https://www.facebook.com/events/469822176771548/"
 event_eventbright = "https://www.eventbrite.ca/e/scratch-for-educators-tickets-46985076629"
 event_location = "Acadia Entrepreneurship Centre Rural Innovation Centre, 24 University Avenue, Wolfville, NS"
-project = "meetups"
+project = "creative-computing"
 title = "Scratch For Educators"
 topics = ["Scratch"]
 +++

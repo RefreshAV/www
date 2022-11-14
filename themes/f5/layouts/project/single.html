@@ -78,6 +78,20 @@
                         </dd>
                         {{ end }}
 
+                        {{ if .Params.project }}
+                        <dt><i class="far fa-calendar-alt"></i> Events</dt>
+                        <dd>
+                            <ul>
+                            {{ $project := .Params.project }}
+                            {{ range where .Site.Pages "Type" "=" "event" }}
+                            {{ if in .Params.project $project }}
+                            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                            {{ end }}
+                            {{ end }}
+                            </ul>
+                        </dd>
+                        {{ end }}
+
                     </dl>
 
                 </details>

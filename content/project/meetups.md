@@ -6,6 +6,8 @@ banner = "images/project/meetups/banner"
 images = ["images/project/meetups/banner-medium.jpg"]
 icon = "images/project/meetups/icon.png"
 topics = ["Tech", "Entrepreneurship", "Design", "Digital Marketing"]
+project = "meetups"
+people = ["Michael Caplan"]
 +++
 
 Our monthly Refresh meetup is where the Annapolis Valley community of designers, developers and innovators come hang out.  Those interested in the creative, technical, and professional culture of digital technology endeavours in the Annapolis Valley meet and talk about all things design, technology, and entrepreneurship.

@@ -6,6 +6,8 @@ banner = "images/project/creative-computing/banner"
 images = ["images/project/creative-computing/banner-medium.jpg"]
 icon = "images/project/creative-computing/icon.png"
 topics = ["Computer Science", "Tech-Ed"]
+project = "creative-computing"
+people = ["Michael Caplan"]
 +++
 
 Creative Computing is a series of programs (courses, workshops, and events) geared towards kids 8 to 13 focused on exposing them to the amazing world of computer science.  

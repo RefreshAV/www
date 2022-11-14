@@ -6,6 +6,8 @@ banner = "images/project/hoist/banner"
 images = ["images/project/hoist/banner-medium.jpg"]
 icon = "images/project/hoist/icon.png"
 topics = ["Tech-Ed", "Entrepreneurship", "Design"]
+project = "hoist"
+people = ["Michael Caplan"]
 +++
 
 

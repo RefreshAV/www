@@ -6,6 +6,7 @@ banner = "images/project/labs/banner"
 images = ["images/project/labs/banner-medium.jpg"]
 icon = "images/project/labs/icon.png"
 topics = ["Tech-Ed", "Entrepreneurship", "Design"]
+people = ["Michael Caplan"]
 +++
 
 The Refresh Annapolis Valley Labs is a playground where adventurous builders come to create.  Labs initiatives are community driven digital technology projects that tend to be entrepreneurial in nature.  In the lab, Refreshers work on building and applying their skills all while pursuing the objectives of their projects.
@@ -14,7 +15,7 @@ Refresh Annapolis Valley Labs is hosted at the Acadia Entrepreneurship Centre Ru
 
 <br clear="all">
 
-# Active Projects
+# Past Projects
 
 <table class="stack">
     <thead>
