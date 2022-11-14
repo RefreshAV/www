@@ -11,6 +11,7 @@ project = "hoist"
 event_sponsors = ["launchbox", "Acadia Entrepreneurship Centre"]
 title = "Bring your Visual Art Alive with Computers - Intro to Processing"
 topics = ["Processing"]
+people = ["Michael Caplan"]
 +++
 
 Do you enjoy painting or drawing?  In this Hoist workshop, teens will learn how to program a computer to build generative art.  We will learn how how simple math equations can be used to create beautiful and engaging outcomes.  No coding experience?  No worries.  This fun introductory workshop is meant for the beginner coder with a visual arts interest.  Using OpenProcessing, participants will be exposed to an international community of coder-artists making a wide range of digital creations. 

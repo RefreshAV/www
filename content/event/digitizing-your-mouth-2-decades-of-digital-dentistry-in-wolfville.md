@@ -11,6 +11,7 @@ event_sponsors = ["Innovacorp", "Acadia Entrepreneurship Centre"]
 title = "Digitizing Your Mouth: 2 Decades of Digital Dentistry in Wolfville"
 topics = ["Health Tech"]
 organizations = ["Labnet Dental Lab Systems"]
+people = ["Michael Caplan"]
 +++
 
 Henry Schein is a distributor and producer of health care products and services with a presence in 33 countries.  The company is a Fortune World’s Most Admired Company and is ranked number one in its industry for social responsibility.  Its Wolfville operation is at the forefront of digitizing dentistry with its wide range of home grown software solutions.

@@ -11,6 +11,7 @@ project = "hoist"
 event_sponsors = ["launchbox", "Acadia Entrepreneurship Centre"]
 title = "Revved Up!"
 topics = ["Startups"]
+people = ["Michael Caplan"]
 +++
 
 March 23 to 24th is launchbox's <a href="http://acadiaentrepreneurshipcentre.com/launchbox/start-it-up/">Start It Up!</a> - a weekend business ideation competition with 10K in prizes to be won.  If you are interested in playing with new business ideas, this event is for you.  While an University event, we have had youth teams (and winning youth teams!) at several Start It Up! competitions.  This year is no different.  

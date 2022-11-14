@@ -12,6 +12,7 @@ event_eventbright = "https://www.eventbrite.ca/e/retro-game-carnival-tickets-572
 event_facebook = "https://www.facebook.com/events/593563807773797/"
 topics = ["games"]
 pics = []
+people = ["Michael Caplan"]
 +++
 
 ### Calling All Classic Gamers!

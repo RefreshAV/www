@@ -1,14 +1,17 @@
 {{ partial "header.html" . }}
 
 {{ if (and (.Site.Params.facebookPage) (.Site.Params.facebookAppId)) }}
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&autoLogAppEvents=1&version=v3.2&appId={{ .Site.Params.facebookAppId }}';
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId            : '{{ .Site.Params.facebookAppId }}',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v15.0'
+        });
+    };
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 {{ end }}
 
 {{ $newposts := (where (where .Data.Pages.Reverse "Type" "event") "Date" ">=" now) }}

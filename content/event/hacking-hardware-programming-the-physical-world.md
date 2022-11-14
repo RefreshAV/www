@@ -11,6 +11,7 @@ project = "hoist"
 event_sponsors = ["launchbox", "Acadia Entrepreneurship Centre"]
 title = "Hacking Hardware - Programming The Physical World "
 topics = ["Hardware Hacking"]
+people = ["Michael Caplan"]
 +++
 
 Interactive jewelry, DIY laser tag, robots you design and build.  In this Hoist workshop, teens will explore electronics by learning how to build and program robots .  No coding or electronics experience?  No worries.  This fun introductory workshop is meant for the beginner.  Using the Circuit Playground, participants will learn how coding and circuits are being used to create amazing creations.  This workshop is for teens with no prior experience with programming required. 

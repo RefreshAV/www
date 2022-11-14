@@ -10,6 +10,7 @@ event_sponsors = ["Acadia Entrepreneurship Centre", "Acadia University"]
 title = "Creative Computing Course 2019"
 topics = ["tech-ed"]
 pics = []
+people = ["Michael Caplan"]
 +++
 
 > We are thrilled to be opening up our 2019 Creative Computing Course for registration.  This is our 3rd year offering this popular course.  Unlike other years, we will be running 2 cohorts of learners for *free*.  One cohort will be a mixed class of girls and boys.  The second will be for girls.  Registration is open until Jan. 2.

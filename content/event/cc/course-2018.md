@@ -10,6 +10,7 @@ event_sponsors = ["Acadia Entrepreneurship Centre", "Acadia University"]
 title = "Creative Computing Course 2018"
 topics = ["tech-ed"]
 pics = []
+people = ["Michael Caplan"]
 +++
 
 Creative Computing is a course developed by an international network of educators passionate about exposing kids to the computer sciences.  Broken up into 7 units, this course uses the popular Scratch programming environment to aid young people (aged 8 to 13) in learning the basics of software development.  Scratch is used over the world by students to easily create interactive artwork, interactive stories, and video games while acting as a stepping stone to the more advanced world of computer science.

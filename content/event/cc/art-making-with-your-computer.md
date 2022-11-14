@@ -10,6 +10,7 @@ event_location = "Wolfville Memorial Library, 21 Elm Avenue, Wolfville, NS"
 project = "creative-computing"
 title = "Art Making with Your Computer!"
 topics = ["Scratch"]
+people = ["Michael Caplan"]
 +++
 
 Art is made with a variety of media - even computers! In this Creative Computing workshop, kids will learn how to program a computer to make interactive artwork. Kids will learn basic coding concepts in a fun beginner friendly environment. Using Scratch, a visual programming environment, kids will be exposed to an international community of coders making a wide range of interactive art projects. This intro workshop is for kids as young as 8 with no prior experience with Scratch required. Registration is required.

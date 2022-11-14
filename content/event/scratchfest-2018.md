@@ -12,6 +12,7 @@ event_sponsors = ["Acadia Entrepreneurship Centre", "Acadia University"]
 title = "#ScratchFest"
 topics = ["tech-ed"]
 pics = []
+people = ["Michael Caplan"]
 +++
 
 {{< youtube 0O9qtmW4tSY >}}

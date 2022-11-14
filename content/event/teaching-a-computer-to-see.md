@@ -11,6 +11,7 @@ project = "hoist"
 event_sponsors = ["launchbox", "Acadia Entrepreneurship Centre"]
 title = "Teaching a Computer To See"
 topics = ["Hardware Hacking"]
+people = ["Michael Caplan"]
 +++
 
 Machine's can learning amazing things when we train them.  In this Hoist workshop, teens will will explore Artificial Intelligence by learning how to build a program that can guess what it sees in a picture.  No coding experience?  No worries.  This fun introductory workshop is meant for the beginner.  Using cutting edge machine learning tools, participants will learn how software is being used to create amazing programs that learn along the way.  
