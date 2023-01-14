@@ -4,8 +4,10 @@ draft = false
 title = "Max Caplan"
 banner = "images/person/max-caplan/banner"
 icon = "images/person/max-caplan/icon.jpg"
-email = "max@eggplant.ws"
-topics = ["Hardware Hacking", "Tech-Ed", "Makers"]
+email = "maxacaplan@gmail.com"
+topics = ["Design", "Tech-Ed", "Makers"]
 +++
 
-Once upon a time, he was born. What happened after this is the interesting part. Relatively speaking. After his long and tedious early childhood, Max found himself being introduced to the fascinating world of technology. One of his earliest experiences was with the beginner programming environment known as Scratch. After a couple of years of making awesome scratch projects, Max moved on to explore more that tech had to offer. Through his School he found himself on a Lego Robotics team for a couple years. Max found himself enthralled in the world of programming in these days, he loved to mess about with javascript and HTML in particular. As time went on, as it does, Max delved deeper and deeper into this fascinating world of computers and code. Of course he picked up other hobbies and interests along he way, like his passion for art in its many forms, and his love for competitive rock climbing. Which brings us to where he is these days.     
+Hi, I'm Max! I'm a full stack web developer and designer with over 3 years of freelance experience and a lifetime of passion for building things!
+
+I really enjoy learning new things and problem solving as a developer. As a designer, I love creating unique and engaging experiences. I am a very detail oriented person who puts a lot of emphasis into how people interact with the things I make.
