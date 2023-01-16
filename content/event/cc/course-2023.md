@@ -76,9 +76,13 @@ None!  Students will be provided a Chromebook as well as snack.
 
 ## Registration ##
 
-Selection of participants is based on availability of space.  To register, please fill 
-out the below form or [open the registration form directly](https://forms.gle/B13cJGDBawhHxLLZA).  Registration 
-does not guarantee a spot.  Registration will run until Jan. 27.  Selections will be announced Jan. 28.  The course 
+Selection of participants is based on availability of space.  To secure your space, please fill 
+out the below form or [open the form directly](https://forms.gle/B13cJGDBawhHxLLZA).  
+
+Registrants will also need to provide a completed [Town of Wolfville Registration Form](https://drive.google.com/file/d/1kUVoOEWRSCmvirird0deDCdBGkIMeQN5/view?usp=sharing).
+Fill it out and email it to [recreation@wolfville.ca](email:recreation@wolfville.ca).
+
+Registration does not guarantee a spot.  Registration will run until Jan. 27.  Selections will be announced Jan. 28.  The course 
 will begin the February 1.
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccng8piAPHDodF8SFVjsi3ttKYSi6gRaetadw_6Eh6WvhQtQ/viewform?embedded=true" width="100%" height="100%" style="height: 95vh" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
