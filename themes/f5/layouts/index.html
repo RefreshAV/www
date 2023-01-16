@@ -14,7 +14,7 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 {{ end }}
 
-{{ $newposts := (where (where .Data.Pages.Reverse "Type" "event") "Date" ">=" now) }}
+{{ $newposts := (where (where .Site.RegularPages "Type" "event") "Date" ">=" now) }}
 
 {{ if $newposts }}
 
