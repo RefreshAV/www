@@ -1,7 +1,7 @@
 +++
 banner = "images/project/creative-computing/banner"
 images = ["images/project/creative-computing/banner-medium.jpg"]
-date = "2023-02-01T14:45:00-04:00"
+date = "2023-02-08T14:45:00-04:00"
 PublishDate = "2023-01-15T19:00:00-03:00"
 draft = false
 event_location = "Wolfville School, 19 Acadia St., Wolfville, NS"

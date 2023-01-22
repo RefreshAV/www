@@ -1,7 +1,7 @@
 +++
 banner = "images/event/hoist/video-game-development-with-godot/banner"
 images = ["images/event/hoist/video-game-development-with-godot/banner-small.jpg"]
-date = "2023-02-01T19:00:00-04:00"
+date = "2023-02-08T19:00:00-04:00"
 PublishDate = "2023-01-14T19:00:00-03:00"
 draft = false
 event_location = "Hillcrest Avenue, Wolfville, NS"
