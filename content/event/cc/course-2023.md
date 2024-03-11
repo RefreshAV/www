@@ -7,7 +7,7 @@ draft = false
 event_location = "Wolfville School, 19 Acadia St., Wolfville, NS"
 project = "creative-computing"
 event_sponsors = []
-title = "Creative Computing Course 2023"
+title = "Scratch Masters 2023 - 2024"
 topics = ["tech-ed"]
 pics = []
 people = ["Michael Caplan"]
@@ -82,8 +82,9 @@ out the below form or [open the form directly](https://forms.gle/B13cJGDBawhHxLL
 Registrants will also need to provide a completed [Town of Wolfville Registration Form](https://drive.google.com/file/d/1kUVoOEWRSCmvirird0deDCdBGkIMeQN5/view?usp=sharing).
 Fill it out and email it to [recreation@wolfville.ca](email:recreation@wolfville.ca).
 
-Registration does not guarantee a spot.  Registration will run until Jan. 27.  Selections will be announced Jan. 28.  The course 
-will begin the February 1.
+Registration does not guarantee a spot.  Registration will run until Feb. 03.  Selections will be announced Feb. 04.  
+The course 
+will begin the February 8.
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccng8piAPHDodF8SFVjsi3ttKYSi6gRaetadw_6Eh6WvhQtQ/viewform?embedded=true" width="100%" height="100%" style="height: 95vh" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
