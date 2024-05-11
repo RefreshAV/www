@@ -1,0 +1,152 @@
+{{ partial "header.html" . }}
+
+<article class="article" id="list">
+
+    <header data-interchange="[/images/topics-small.jpg, small], [/images/topics-medium.jpg, medium], [{{ "/images/topics-large.jpg" | absURL }}, large]" title="{{ .Title }}" alt="{{ .Title }}">
+
+        <div class="row columns small-up-2 medium-up-3 large-up-4">
+            <h1>
+                <i class="far fa-comments"></i>
+                Topic: {{ .Title }}
+            </h1>
+        </div>
+    </header>
+
+    <div class="row">
+        <div id="past" class="columns small-up-2 medium-up-3 large-up-4">
+
+            {{ $paginator := .Paginate .Data.Pages }}
+            {{ range $paginator.Pages }}
+
+                {{ if eq .Type "person" }}
+
+                <div class="media-object">
+                    <div class="media-object-section">
+                        <div class="thumbnail">
+
+                            {{ if .Params.icon }}
+                            <a href="{{ .Permalink }}" itemprop="url">
+                                <img src="{{ .Params.icon | absURL }}" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
+                            </a>
+                            {{end}}
+                        </div>
+                    </div>
+                    <div class="media-object-section">
+                        <h4 class="article-title">
+                            <a href="{{ .Permalink }}" itemprop="url">
+                                <i class="fas fa-user"></i>
+                                {{ .Title }}
+                            </a>
+                        </h4>
+
+                        <p>{{ .Summary }}</p>
+
+                        <p class="read-more">
+                            <strong><a href="{{ .Permalink }}">
+                                Read all about them...
+                            </a></strong>
+                        </p>
+                    </div>
+                </div>
+
+                {{ end }}
+
+                {{ if eq .Type "event" }}
+
+                <div class="media-object">
+                    <div class="media-object-section">
+                        <div class="thumbnail">
+                            <a href="{{ .Permalink }}" itemprop="url">
+                                <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-object-section">
+                        <h4 class="article-title">
+                            <a href="{{ .Permalink }}" itemprop="url">
+                                <i class="fas fa-calendar-alt"></i>
+                                {{ .Title }}
+                            </a>
+                        </h4>
+
+                        <p><strong>{{ dateFormat "January 2, 2006 at 3:04pm" .Date }}</strong></p>
+
+                        <p>{{ .Summary }}</p>
+
+                        <p class="read-more">
+                            <strong><a href="{{ .Permalink }}">
+                                Get the deets...
+                            </a></strong>
+                        </p>
+                    </div>
+                </div>
+
+                {{ end }}
+
+                {{ if eq .Type "organization" }}
+
+                <div class="media-object">
+                    <div class="media-object-section">
+                        <div class="thumbnail">
+                            {{ if .Params.icon }}
+                            <img src="{{ .Params.icon | absURL }}" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
+                            {{end}}
+                        </div>
+                    </div>
+                    <div class="media-object-section">
+                        <h4 class="article-title">
+                            <a href="{{ .Permalink }}" itemprop="url">
+                                <i class="far fa-building"></i> {{ .Title }}
+                            </a>
+                        </h4>
+
+                        <p>{{ .Summary }}</p>
+
+                        <p class="read-more">
+                            <strong><a href="{{ .Permalink }}">
+                                Find them here...
+                            </a></strong>
+                        </p>
+                    </div>
+                </div>
+
+                {{ end }}
+
+                {{ if eq .Type "project" }}
+
+                <div class="media-object">
+                    <div class="media-object-section">
+                        <div class="thumbnail">
+                            {{ if .Params.icon }}
+                            <img src="{{ .Params.icon | absURL }}" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
+                            {{end}}
+                        </div>
+                    </div>
+                    <div class="media-object-section">
+                        <h4 class="article-title">
+                            <a href="{{ .Permalink }}" itemprop="url">
+                                <i class="fas fa-cubes"></i> {{ .Title }}
+                            </a>
+                        </h4>
+
+                        <p>{{ .Summary }}</p>
+
+                        <p class="read-more">
+                            <strong><a href="{{ .Permalink }}">
+                                Read all about it...
+                            </a></strong>
+                        </p>
+                    </div>
+                </div>
+
+                {{ end }}
+
+            {{ end }}
+
+            {{ partial "pagination" . }}
+
+        </div>
+    </div>
+
+</article>
+{{ partial "footer.html" . }}

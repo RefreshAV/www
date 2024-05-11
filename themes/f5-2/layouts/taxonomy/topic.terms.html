@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+
+<article class="article" id="terms">
+
+    <header data-interchange="[/images/topics-small.jpg, small], [/images/topics-medium.jpg, medium], [{{ "/images/topics-large.jpg" | absURL }}, large]" title="Topics" alt="Topics">
+
+        <div class="row columns small-up-2 medium-up-3 large-up-4">
+            <h1>
+                <i class="far fa-comments"></i>
+                {{ .Title }}
+            </h1>
+        </div>
+    </header>
+
+    <section class="row">
+
+        <div class="columns small-up-2 medium-up-3 large-up-4">
+
+            {{ $data := .Data }}
+            {{ range $key, $value := .Data.Terms }}
+            <a href="/{{ $data.Plural }}/{{ $key | urlize }}" class="button large hollow">
+                {{ $key }}
+                <span class="badge">{{ len $value }}</span>
+            </a>
+
+            {{ end }}
+
+        </div>
+    </section>
+
+</article>
+
+
+
+{{ partial "footer.html" . }}
