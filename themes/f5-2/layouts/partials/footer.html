@@ -3,13 +3,13 @@
     <div class="row">
       <!-- Footer secition, this part will contain the footer with the links to all media platforms of Refresh Annapolis -->
       <div class="col-md-6">
-        <div class="footer_info">
+        <div>
           <div>
             <h2>
-              Refresh Anapolis Valley
+              Refresh Annapolis Valley
             </h2>
             <p style="color: white;">
-              <bold>Refresh</bold> is a community of designers, developers and innovators working to 
+              <strong>Refresh</strong> is a community of designers, developers and innovators working to
               refresh the creative, technical, and professional culture of digital technology endeavours 
               in the Annapolis Valley while promoting design, technology, and entrepreneurship. 
             </p>
@@ -32,42 +32,50 @@
         </div>
       </div>
       <div class="col-md-6">     
-        <div class="footer_form">
-          <form>
+        <div>
+          <h4>Subscribe to our mailing list</h4>
+
+          <form action="https://refreshannapolisvalley.us6.list-manage.com/subscribe/post" method="POST">
+            <input type="hidden" name="u" value="541eedc014006742efdd2ed17">
+            <input type="hidden" name="id" value="ceb11b34fb">
+
             <fieldset>
               <div>
-                <label for="email" class="form-label mt-4">Email Adress</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                <label for="EMAIL" class="form-label mt-4">Email</label>
+                <input type="email" class="form-control" id="EMAIL" placeholder="your@domain.com" name="EMAIL" required pattern="email">
               </div>
               <div>
-                <label for="fNAme" class="form-label mt-4">Email Adress</label>
-                <input type="fNAme" class="form-control" id="fName" placeholder="Enter Email">
+                <label for="FNAME" class="form-label mt-4">First Name</label>
+                <input id="FNAME" type="text" class="form-control" placeholder="Given Name" name="FNAME">
               </div>
               <div>
-                <label for="lName" class="form-label mt-4">Email Adress</label>
-                <input type="lName" class="form-control" id="lNAme" placeholder="Enter Email">
+                <label for="LNAME" class="form-label mt-4">Last Name</label>
+                <input id="LNAME" type="text" class="form-control" placeholder="Family Name" name="LNAME">
               </div>
               <fieldset>
+                <legend>Interests</legend>
+
                 <div class="form-check">
-                  <input class="form-chec-input" type="checkBox" name="optionsRadios" id="refresh" value="refresh" checked="">
+                  <input class="form-check-input" type="checkBox" name="group[13385][1]" id="refresh" checked="">
                   <label class="form-check-label pt-3" for="refresh">
-                    Refresh Events and Activities
+                    Refresh Events & Activities
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-chec-input" type="checkBox" name="optionsRadios" id="creative" value="creative" checked="">
+                  <input class="form-check-input" type="checkBox" name="group[13385][2]" id="creative" checked="">
                   <label class="form-check-label pt-2" for="creative">
                     Creative Computing for Kids
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-chec-input" type="checkBox" name="optionsRadios" id="AV" value="AV" checked="">
+                  <input class="form-check-input" type="checkBox" name="group[13385][4]" id="AV" checked="">
                   <label class="form-check-label pt-2" for="AV">
                     Hoist AV Teen Tech + Entrepreneurship
                   </label>
                 </div>
               </fieldset>
             </fieldset>
+
           </form>
         </div> 
       </div>
