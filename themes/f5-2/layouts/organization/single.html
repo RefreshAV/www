@@ -1,31 +1,28 @@
 {{ partial "header.html" . }}
-
-
-<main role="main">
-    <article class="article" itemscope itemtype="http://schema.org/Article">
-        <header data-interchange="[{{ (print .Params.banner "-small" ".jpg") | absURL }}, small], [{{ (print .Params.banner "-medium" ".jpg") | absURL }}, medium], [{{ (print .Params.banner "-large" ".jpg") | absURL }}, large]">
-
-            <div class="row columns small-up-2 medium-up-3 large-up-4">
-                <h1 itemprop="name">{{ .Title }}</h1>
-            </div>
-
-        </header>
-
-        <div class="row">
-
-
-            <main class="columns small-up-2 medium-up-3 large-up-4">
-                {{ if .Params.icon }}
-                <img class="thumbnail" src="{{ .Params.icon | absURL }}" alt="{{ .Title }}" align="left">
-                {{ end }}
-                {{ .Content }}
-            </main>
-
-            <footer>
-
-                <details class="columns small-up-2 medium-up-3 large-up-4" role="group" open>
-                    <summary role="button" aria-expanded="false">Meta</summary>
-
+<main role="main" class="mt-3">
+    <div class="row">
+        <div class="col-md-8">
+            <article class="article" itemscope itemtype="http://schema.org/Article">
+                <header data-interchange="[{{ (print .Params.banner "-small" ".jpg") | absURL }}, small], [{{ (print .Params.banner "-medium" ".jpg") | absURL }}, medium], [{{ (print .Params.banner "-large" ".jpg") | absURL }}, large]">
+                    <div class="row columns small-up-2 medium-up-3 large-up-4">
+                        <h1 itemprop="name">{{ .Title }}</h1>
+                    </div>
+                </header>
+                    <div class="row">
+                        <main class="columns small-up-2 medium-up-3 large-up-4">
+                            {{ if .Params.icon }}
+                            <img class="thumbnail mx-5 mt-3" src="{{ .Params.icon | absURL }}" alt="{{ .Title }}" align="left">
+                            {{ end }}
+                            {{ .Content }}    
+                        </main>
+                    </div>
+                </article>
+                </div>
+                   
+                <div class="col-md-4">
+                    <footer>  
+                        <details class="columns small-up-2 medium-up-3 large-up-4" role="group" open>
+                            <summary class="card text-white bg-primary mb-3 text-center" role="button" aria-expanded="false">Meta</summary>
                     <dl class="inline">
 
                         {{ if .Params.location }}
@@ -92,11 +89,9 @@
                 </details>
 
                 <section id="map"></section>
-
             </footer>
         </div>
-    </article>
-
+    </div>
     {{ if .Site.Params.disqusShortname }}
     <section>
         {{ template "_internal/disqus.html" . }}

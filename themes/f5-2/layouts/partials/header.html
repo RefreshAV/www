@@ -1,33 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-  
-    <title>Creativ Computing Fall 2023</title>
+    <meta name="theme" content="hugo-f5-2">
+    {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.role }}<meta name="description" content="{{ . }}">{{ end }}
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5/dist/vapor/bootstrap.min.css">
-    <!-- fonts imported for project-->
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="{{ .Permalink }}">
 
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
     <!-- Font Import -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5/dist/vapor/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/f5.css?7">
+
+    <!-- import the webpage's javascript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+
+    {{ if .Site.Params.facebookAppId }}
+    <meta property="fb:app_id" content="{{ .Site.Params.facebookAppId }}" />
+    {{ end }}
+
+    {{ if .Site.Params.googleSiteVerification }}
+    <meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerification }}" />
+    {{ end }}
+
+    {{ if .Site.Params.facebookPixelId }}
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '{{ .Site.Params.facebookPixelId }}');
+      fbq('track', 'PageView');
+      fbq('track', 'ViewContent');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id={{ .Site.Params.facebookPixelId }}&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    {{ end }}
+
   </head>
-  <body class="pt-5" style="font-family: 'Press Start 2P', cursive;">
+  <body class="pt-5">
     
     <!-- Section to add the navigation bar and allow switching of pages-->
     <nav class="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
         <!-- TODO: play with getting branding in here Done -->
-        <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 1.5rem; color: Blue">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}">
           Refresh Annapolis Valley
         </a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,24 +71,14 @@
         </button>
           <div class="navbar-collapse collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto">
+
+            {{ $currentNode := . }}
+            {{ $baseUrl := .Site.BaseURL }}
+            {{ range .Site.Menus.main }}
             <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 1.2rem;">Home <span class="visually-hidden">(current)</span></a>
+              <a class="nav-link {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}}" href="{{ $baseUrl }}{{.URL}}">{{ .Name }}</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 1.2rem;">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 1.2rem;">People</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 1.2rem;">Orgs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 1.2rem;">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 1.2rem;">Blog</a>
-            </li>
+            {{ end }}
           </ul>
         </div>
       </div>
