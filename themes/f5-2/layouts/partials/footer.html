@@ -40,40 +40,43 @@
             <input type="hidden" name="id" value="ceb11b34fb">
 
             <fieldset>
-              <div>
-                <label for="EMAIL" class="form-label mt-4">Email</label>
+              <div class="mt-4">
+                <label for="EMAIL" class="form-label">Email</label>
                 <input type="email" class="form-control" id="EMAIL" placeholder="your@domain.com" name="EMAIL" required pattern="email">
               </div>
-              <div>
-                <label for="FNAME" class="form-label mt-4">First Name</label>
+              <div class="mt-4">
+                <label for="FNAME" class="form-label">First Name</label>
                 <input id="FNAME" type="text" class="form-control" placeholder="Given Name" name="FNAME">
               </div>
-              <div>
-                <label for="LNAME" class="form-label mt-4">Last Name</label>
+              <div class="mt-4">
+                <label for="LNAME" class="form-label">Last Name</label>
                 <input id="LNAME" type="text" class="form-control" placeholder="Family Name" name="LNAME">
               </div>
-              <fieldset>
+              <fieldset class="mt-4">
                 <legend>Interests</legend>
 
                 <div class="form-check">
                   <input class="form-check-input" type="checkBox" name="group[13385][1]" id="refresh" checked="">
-                  <label class="form-check-label pt-3" for="refresh">
+                  <label class="form-check-label" for="refresh">
                     Refresh Events & Activities
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkBox" name="group[13385][2]" id="creative" checked="">
-                  <label class="form-check-label pt-2" for="creative">
+                  <label class="form-check-label" for="creative">
                     Creative Computing for Kids
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkBox" name="group[13385][4]" id="AV" checked="">
-                  <label class="form-check-label pt-2" for="AV">
+                  <label class="form-check-label" for="AV">
                     Hoist AV Teen Tech + Entrepreneurship
                   </label>
                 </div>
               </fieldset>
+
+              <button type="submit" class="btn btn-primary">Don&apos;t Miss a Beat</button>
+
             </fieldset>
 
           </form>
@@ -81,3 +84,15 @@
       </div>
       </div>
   </div>
+
+{{ if .Site.Params.googleAPIKey }}
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key={{ .Site.Params.googleAPIKey }}"></script>
+{{ end }}
+<script src="{{ .Site.BaseURL }}js/f5.js?v5"></script>
+{{ template "_internal/google_analytics_async.html" . }}
+{{ if .Site.Params.facebookPixelId }}
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{ .Site.Params.facebookPixelId }}&ev=PageView&noscript=1" /></noscript>
+{{ end }}
+</body>
+</html>
