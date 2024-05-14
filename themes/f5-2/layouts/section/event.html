@@ -4,51 +4,58 @@
 
     <header data-interchange="[{{ "/images/events-small.jpg" | absURL }}, small], [{{ "/images/events-medium.jpg" | absURL }}, medium], [{{ "/images/events-large.jpg" | absURL }}, large]" title="Events New and Old" alt="Events New and Old">
 
-        <div class="row columns small-up-2 medium-up-3 large-up-4">
+        <div class="row columns small-up-2 medium-up-3 large-up-4 mt-3 text-center">
             <h1>
-                <i class="fas fa-calendar-alt"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                  </svg>
                 Events New and Old
             </h1>
         </div>
     </header>
 
 
-    <div class="row">
-        <div id="past" class="columns small-up-2 medium-up-3 large-up-4">
-
-            {{ $paginator := .Paginate .Data.Pages }}
-            {{ range $paginator.Pages }}
-            <div class="media-object">
-                <div class="media-object-section">
-                    <div class="thumbnail">
-                        <a href="{{ .Permalink }}" itemprop="url">
-                            <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
-                        </a>
+    <div class="container">
+        <div class="row">
+            <div id="past" class="columns small-up-2 medium-up-3 large-up-4">
+                {{ $paginator := .Paginate .Data.Pages }}
+                {{ range $paginator.Pages }}
+                <div class="col-12">
+                    <div class="card border-light mb-3">
+                        <div class="card-header border-primary">
+                            <h4 class="article-title">
+                                <a href="{{ .Permalink }}" itemprop="url">
+                                    {{ .Title }}
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="thumbnail">
+                                <a href="{{ .Permalink }}" itemprop="url">
+                                    <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
+                                </a>
+                            </div>
+        
+                            <p><strong>{{ dateFormat "January 2, 2006 at 3:04pm" .Date }}</strong></p>
+        
+                            <p>{{ .Summary }}</p>
+        
+                            <p class="read-more">
+                                <strong><a href="{{ .Permalink }}">
+                                    Get the deets...
+                                </a></strong>
+                            </p>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="media-object-section">
-                    <h4 class="article-title">
-                        <a href="{{ .Permalink }}" itemprop="url">
-                            {{ .Title }}
-                        </a>
-                    </h4>
-
-                    <p><strong>{{ dateFormat "January 2, 2006 at 3:04pm" .Date }}</strong></p>
-
-                    <p>{{ .Summary }}</p>
-
-                    <p class="read-more">
-                        <strong><a href="{{ .Permalink }}">
-                            Get the deets...
-                        </a></strong>
-                    </p>
+                {{ end }}
+                
                 </div>
+                {{ partial "pagination" . }}
+    
             </div>
-
-            {{ end }}
-
-            {{ partial "pagination" . }}
-
         </div>
     </div>
 
