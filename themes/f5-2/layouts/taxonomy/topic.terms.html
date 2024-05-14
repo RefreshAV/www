@@ -1,34 +1,35 @@
 {{ partial "header.html" . }}
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-light mb-3">
+                <div class="card-header text-center">
+                    <h1>
+                        {{ .Title }}
+                    </h1>
+                </div>
+                <div class="card-body">
+                    <section class="row">
 
-<article class="article" id="terms">
-
-    <header data-interchange="[/images/topics-small.jpg, small], [/images/topics-medium.jpg, medium], [{{ "/images/topics-large.jpg" | absURL }}, large]" title="Topics" alt="Topics">
-
-        <div class="row columns small-up-2 medium-up-3 large-up-4">
-            <h1>
-                <i class="far fa-comments"></i>
-                {{ .Title }}
-            </h1>
+                        <div class="columns small-up-2 medium-up-3 large-up-4 text-center">
+                
+                            {{ $data := .Data }}
+                            {{ range $key, $value := .Data.Terms }}
+                            <button type="button" class="btn btn-outline-primary btn-lg mt-2">
+                                {{ $key }}
+                                <span class="badge">{{ len $value }}</span>
+                            </button>
+                
+                            {{ end }}
+                
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
+</div>
 
-    <section class="row">
-
-        <div class="columns small-up-2 medium-up-3 large-up-4">
-
-            {{ $data := .Data }}
-            {{ range $key, $value := .Data.Terms }}
-            <a href="/{{ $data.Plural }}/{{ $key | urlize }}" class="button large hollow">
-                {{ $key }}
-                <span class="badge">{{ len $value }}</span>
-            </a>
-
-            {{ end }}
-
-        </div>
-    </section>
-
-</article>
 
 
 
