@@ -75,11 +75,6 @@ project = "projects"
   url = "post"
   weight = 6
 
-[[menu.main]]
-  name = "Support"
-  url = "support"
-  weight = 7
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
