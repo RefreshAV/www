@@ -43,7 +43,9 @@
                         <div class="media-object-section">
                             <div class="thumbnail">
                                 <a href="{{ .Permalink }}" itemprop="url">
-                                    <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
+                                    <div class="bg-white p-4">
+                                        <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
+                                    </div>
                                 </a>
                             </div>
                         </div>
