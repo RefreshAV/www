@@ -22,54 +22,53 @@
 
         {{ if eq $index 0 }}
 
-            <article class="article">
-
-                <header data-interchange="[{{ (print .Params.banner "-small" ".jpg") | absURL }}, small], [{{ (print .Params.banner "-medium" ".jpg") | absURL }}, medium], [{{ (print .Params.banner "-large" ".jpg") | absURL }}, large]" class="article-banner" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
-
-                <div class="row columns small-up-2 medium-up-3 large-up-4">
-                    <h1 class="article-title">
-                        <a href="{{ .Permalink }}" itemprop="url">
-                            
-                            {{ .Title }}
-                        </a>
-                    </h1>
-                </div>
-
-                </header>
-
-                <div class="row columns small-up-2 medium-up-3 large-up-4">
-
-                    <div class="media-object">
-                        <div class="media-object-section">
-                            <div class="thumbnail">
-                                <a href="{{ .Permalink }}" itemprop="url">
-                                    <div class="bg-white p-4">
-                                        <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
-                                    </div>
-                                </a>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12">
+                    <article class="article">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <header class="article-banner" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
+                                        <div class="banner-image" style="background-image: url('{{ .Params.banner }}');">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h1 class="text-white">{{ .Title }}</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </header>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 order-md-2 d-flex justify-content-center">
+                                    <a href="{{ .Permalink }}" itemprop="url">
+                                        <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" class="mx-auto">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-sm-12 order-md-1">
+                                    <p><strong>{{ dateFormat "January 2, 2006 at 3:04pm" .Date }}</strong></p>
+                                    <p class="article-style">
+                                        {{ if .Truncated }}
+                                        {{ .Summary }}
+                                        {{ else }}
+                                        {{ .Content }}
+                                        {{ end }}
+                                    </p>
+                                    <p class="read-more">
+                                        <strong><a href="{{ .Permalink }}">Get the deets...</a></strong>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="media-object-section">
-                            <p><strong>{{ dateFormat "January 2, 2006 at 3:04pm" .Date }}</strong></p>
-
-                            <p class="article-style">
-                                {{ if .Truncated }}
-                                {{ .Summary }}
-                                {{ else }}
-                                {{ .Content }}
-                                {{ end }}
-                            </p>
-                            <p class="read-more">
-                                <strong><a href="{{ .Permalink }}">
-                                    Get the deets...
-                                </a></strong>
-                            </p>
-                        </div>
-                    </div>
-
-
+                    </article>
                 </div>
-            </article>
+            </div>
+        </div>
+        
+        
         {{ else }}
 
             {{ if eq $index 1 }}
@@ -128,46 +127,52 @@
 
     <div class="container pt-5">
         <div class="row">
-          <div class="col-12">
-            <article class="article">
-              <header class="article-banner" itemprop="image" title="Creative Computing Fall 2023" alt="Creative Computing Fall 2023" style="font-size: 1.5rem;">
-                <h1 class="text-center" style="font-size: 2.5rem; margin-bottom: 20px;">
-                  <div class="text-center">
-                        <a href="{{ .Permalink }}" itemprop="url">
-                            {{ .Title }}
-                        </a>
-                    </div>
-                    </h1>
-                </header>
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-6 col-sm-12 d-flex justify-content-center">
-                            <a href="{{ .Permalink }}" itemprop="url">
-                                <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" class="mx-auto">
-                            </a>
+            <div class="col-12">
+                <article class="article">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <header class="article-banner" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+                                                height: 30vh">
+                                                    <h1 class="text-white pb-4">{{ .Title }}</h1>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                
+                            </div>
                         </div>
-                    <div class="col-md-6 col-sm-12">
-                        <p><strong>{{ dateFormat "January 2, 2006 at 3:04pm" .Date }}</strong></p>
-
-                        <p class="article-style">
-                            {{ if .Truncated }}
-                            {{ .Summary }}
-                            {{ else }}
-                            {{ .Content }}
-                            {{ end }}
-                        </p>
-                        <p class="read-more">
-                            <strong><a href="{{ .Permalink }}">
-                                Get the deets...
-                            </a></strong>
-                        </p>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 order-md-2 d-flex justify-content-center">
+                                <a href="{{ .Permalink }}" itemprop="url">
+                                    <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" class="mx-auto img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-12 order-md-1">
+                                <p><strong>{{ dateFormat "January 2, 2006 at 3:04pm" .Date }}</strong></p>
+                                <p class="article-style">
+                                    {{ if .Truncated }}
+                                    {{ .Summary }}
+                                    {{ else }}
+                                    {{ .Content }}
+                                    {{ end }}
+                                </p>
+                                <p class="read-more">
+                                    <strong><a href="{{ .Permalink }}">Get the deets...</a></strong>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>
-        </article>
         </div>
     </div>
-</div>
 
 {{ end }}
 {{ end }}
@@ -187,7 +192,7 @@
                             {{ range first 8 (where (where .Site.RegularPages "Type" "event") "Date" "<" now) }}
                             <li class="d-flex algin-items-center mb-4">
                                 <a href="{{ .Permalink }}" itemprop="url">
-                                    <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" style="max-width: 100px; max-height: 100px;" class="me-3">
+                                    <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" style="max-width: 100px; max-height: 100px;" class="me-3 img-fluid">
                                 </a>
                                 <div class="flex-grow-1">
                                     <h5 class="article-title text-center">

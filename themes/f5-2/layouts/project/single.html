@@ -10,7 +10,7 @@
                         <div class="row my-4">
                             <main class="columns small-up-2 medium-up-3 large-up-4">
                                 {{ if .Params.icon }}
-                                <img class="thumbnail mx-5 mt-3" src="{{ .Params.icon | absURL }}" alt="{{ .Title }}" align="left" class="img-fluid">
+                                <img class="img-fluid float-left mw-200 mh-200" src="{{ .Params.icon | absURL }}" alt="{{ .Title }}" align="left">
                                 {{ end }}
                                 <div class="mx-5 mt-3 text-center">
                                     {{ .Content }}

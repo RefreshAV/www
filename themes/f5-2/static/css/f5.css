@@ -3,3 +3,16 @@
 body, body * {
     font-family: 'Press Start 2P', cursive;
   }
+
+  .img-fluid {
+    background-color: white;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .article-banner {
+    background-image: url('/images/background.jpg'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    padding: 50px; /* Adjust padding as needed */
+}
