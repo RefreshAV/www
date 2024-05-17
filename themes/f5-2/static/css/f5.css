@@ -16,3 +16,7 @@ body, body * {
     background-position: center;
     padding: 50px; /* Adjust padding as needed */
 }
+
+.thumbnail {
+  max-width: 200px;
+}

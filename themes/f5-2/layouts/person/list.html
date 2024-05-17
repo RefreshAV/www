@@ -36,7 +36,7 @@
         
                                     {{ if .Params.icon }}
                                     <a href="{{ .Permalink }}" itemprop="url" >
-                                        <img src="{{ .Params.icon | absURL }}" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" style="max-width: 300px; max-height: 300px;">
+                                        <img src="{{ .Params.icon | absURL }}" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" class="img-fluid">
                                     </a>
                                     {{end}}
                                 </div>

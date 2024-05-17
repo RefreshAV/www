@@ -18,32 +18,32 @@
 
             {{ $paginator := .Paginate .Data.Pages }}
             {{ range $paginator.Pages }}
-            <div class="media-object">
-                <div class="media-object-section">
-                    <div class="thumbnail">
+            <div class="col-12">
+                <div class="card border-light mb-3">
+                    <div class="card-header border-primary">
+                        <h4 class="article-title">
+                            <a href="{{ .Permalink }}" itemprop="url">
+                                {{ .Title }}
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="card-body">
                         {{ if .Params.icon }}
                         <a href="{{ .Permalink }}" itemprop="url">
-                            <img src="{{ .Params.icon | absURL }}" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
+                            <img src="{{ .Params.icon | absURL }}" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" class="img-fluid">
                         </a>
                         {{end}}
+
+                        <p>{{ .Summary }}</p>
+        
+                        <p class="read-more">
+                            <strong><a href="{{ .Permalink }}">
+                                Find them here...
+                            </a></strong>
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="media-object-section">
-                    <h4 class="article-title">
-                        <a href="{{ .Permalink }}" itemprop="url">
-                            {{ .Title }}
-                        </a>
-                    </h4>
-
-                    <p>{{ .Summary }}</p>
-
-                    <p class="read-more">
-                        <strong><a href="{{ .Permalink }}">
-                            Get the deets...
-                        </a></strong>
-                    </p>
-                </div>
-            </div>
 
             {{ end }}
 
