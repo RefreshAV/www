@@ -22,8 +22,8 @@
 
         {{ if eq $index 0 }}
 
-        <div class="container pt-5">
-            <div class="row">
+        
+            <div class="row pt-5">
                 <div class="col-12">
                     <article class="article">
                         <div class="container">
@@ -66,7 +66,7 @@
                     </article>
                 </div>
             </div>
-        </div>
+        
         
         
         {{ else }}
@@ -125,27 +125,19 @@
 
     {{ range first 1 (where .Site.RegularPages "Type" "event") }}
 
-    <div class="container pt-5">
-        <div class="row">
-            <div class="col-12">
+    
                 <article class="article">
-                    <div class="container">
                         <div class="row">
                             <div class="col-12">
                                 <header class="article-banner" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}">
-                                    <div class="container">
+                                    <div class="container-fluid px-0 position-relative" style="background-image: url('{{ (print .Params.banner "-small" ".jpg") | absURL }}'); background-size: cover; background-position: center;">
                                         <div class="row">
                                             <div class="col">
-                                                <div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
-                                                height: 30vh">
-                                                    <h1 class="text-white pb-4">{{ .Title }}</h1>
-                                                </div>
-                                                
+                                                <h1 class="pb-4 mt-auto position-relative" id="title">{{ .Title }}</h1>
                                             </div>
                                         </div>
                                     </div>
                                 </header>
-                                
                             </div>
                         </div>
                         <div class="row">
@@ -168,11 +160,8 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
                 </article>
-            </div>
-        </div>
-    </div>
+    
 
 {{ end }}
 {{ end }}
@@ -192,7 +181,7 @@
                             {{ range first 8 (where (where .Site.RegularPages "Type" "event") "Date" "<" now) }}
                             <li class="d-flex algin-items-center mb-4">
                                 <a href="{{ .Permalink }}" itemprop="url">
-                                    <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" style="max-width: 100px; max-height: 100px;" class="me-3 img-fluid">
+                                    <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" class="past-event-img">
                                 </a>
                                 <div class="flex-grow-1">
                                     <h5 class="article-title text-center">
@@ -252,5 +241,6 @@
         </div>
     </div>
 </div>
+
 
 {{ partial "footer.html" . }}

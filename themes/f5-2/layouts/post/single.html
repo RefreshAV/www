@@ -1,8 +1,7 @@
 {{ partial "header.html" . }}
 
 
-<main role="main">
-    <div class="container mt-3 mb-3">
+<main role="main" class="mb-3">
         <div class="row">
             <div class="card border-light">
                 <article class="article" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -26,7 +25,6 @@
                 </article>
             </div>
         </div>
-    </div>
 
     {{ if .Site.Params.disqusShortname }}
     <section>

@@ -11,12 +11,22 @@ body, body * {
   }
 
   .article-banner {
-    background-image: url('/images/background.jpg'); /* Adjust the path as needed */
-    background-size: cover;
     background-position: center;
-    padding: 50px; /* Adjust padding as needed */
+    padding: 50px; 
 }
 
 .thumbnail {
   max-width: 200px;
+}
+
+#title {
+  text-align: center;
+  color: darkorchid;
+  height: 30vh;
+}
+
+.past-event-img {
+  max-width: 100px;
+  max-height: 100px;
+  background-color: white;
 }

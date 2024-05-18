@@ -1,5 +1,6 @@
+
+
 <!-- Footer Section, this will display the form to sign up to help the Refresh Annapolis website -->
-<div class="container mt-5">
     <div class="row">
       <!-- Footer secition, this part will contain the footer with the links to all media platforms of Refresh Annapolis -->
       <div class="col-md-6 mb-4 md-0">
@@ -84,6 +85,28 @@
       </div>
       </div>
   </div>
+
+  {{ partial "modal-signup.html" . }}
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        console.log('Document ready');
+        $('#signupPopup').on('hidden.bs.modal', function() {
+            console.log('Modal hidden');
+            localStorage.tried = true;
+            alert('I\'ll try to not take this personally. If you change your mind, the mailing list sign up is at the bottom of every page.');
+        });
+
+        if (!localStorage.tried) {
+            console.log('Modal will show in 30 seconds');
+            setTimeout(function() {
+                console.log('Showing modal');
+                $('#signupPopup').modal('show');
+            }, 1000);
+        }
+    });
+</script>
 
 {{ if .Site.Params.googleAPIKey }}
 <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key={{ .Site.Params.googleAPIKey }}"></script>
