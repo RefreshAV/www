@@ -115,7 +115,7 @@
 <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key={{ .Site.Params.googleAPIKey }}"></script>
 {{ end }}
 <script src="{{ .Site.BaseURL }}js/f5.js?v5"></script>
-{{ template "_internal/google_analytics_async.html" . }}
+{{ template "_internal/google_analytics.html" . }}
 {{ if .Site.Params.facebookPixelId }}
 <noscript>
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{ .Site.Params.facebookPixelId }}&ev=PageView&noscript=1" /></noscript>
