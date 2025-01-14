@@ -17,8 +17,6 @@ Build: Arcade is an introductory Computer Science course for Middle and High Sch
 will build retro style video games.  While exploring the early history of video games, we will learn the fundamentals of 
 the Makecode Arcade game development engine.  
 
-{{< youtube j2YbMQhrFhI >}}
-
 Makecode Arcade is a great first step into the world of video game development, as well as the larger world of Computer 
 Science.  No prior coding experience necessary.  
 
@@ -35,6 +33,12 @@ Class size is restricted to 6 to facilitate a hands-on learning environment betw
 Computers, pizza, and snacks provided.
 
 The cost for the week is sliding scale, starting at $200.  
+
+## Clips ##
+
+A short from CBC covering some of our Makecode Arcade creations.
+
+{{< youtube j2YbMQhrFhI >}}
 
 
 ## Get On The List! ##
