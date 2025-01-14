@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body, body * {
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .img-fluid {
+    background-color: white;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .article-banner {
+    background-position: center;
+    padding: 50px; 
+}
+
+.thumbnail {
+  max-width: 200px;
+}
+
+#title {
+  text-align: center;
+  color: darkorchid;
+  height: 30vh;
+}
+
+.past-event-img {
+  max-width: 100px;
+  max-height: 100px;
+  background-color: white;
+}

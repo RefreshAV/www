@@ -1,0 +1,65 @@
+{{ partial "header.html" . }}
+
+        <article class="article" id="list">
+            <div class="row">
+                <div class="col-12">
+                    <header class="article-banner" itemprop="image" title="Events New and Old" alt="Events New and Old">
+                        <div class="container-fluid px-0 position-relative" style="background-image: url('{{ (print "/images/events" "-small" ".jpg") | absURL }}'); background-size: cover; background-position: center;">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="pb-4 mt-auto position-relative" id="title">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                                          </svg>
+                                        Events New and Old
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            
+            
+            
+            
+
+            <div id="past" class="columns small-up-2 medium-up-3 large-up-4">
+                {{ $paginator := .Paginate .Data.Pages }}
+                {{ range $paginator.Pages }}
+                <div class="col-12">
+                    <div class="card border-light mb-3">
+                        <div class="card-header border-primary text-center">
+                            <h4 class="article-title">
+                                <a href="{{ .Permalink }}" itemprop="url">
+                                    {{ .Title }}
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="thumbnail">
+                                <a href="{{ .Permalink }}" itemprop="url">
+                                    <img src="{{ .Site.BaseURL }}images/project/{{ .Params.project }}/icon.png" itemprop="image" title="{{ .Title }}" alt="{{ .Title }}" class="img-fluid rounded">
+                                </a>
+                            </div>
+        
+                            <p><strong>{{ dateFormat "January 2, 2006 at 3:04pm" .Date }}</strong></p>
+        
+                            <p>{{ .Summary }}</p>
+        
+                            <p class="read-more">
+                                <strong><a href="{{ .Permalink }}">
+                                    Get the deets...
+                                </a></strong>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                {{ end }}
+                
+            </div>
+            {{ partial "pagination" . }}
+        </article>
+    </div>
+{{ partial "footer.html" . }}

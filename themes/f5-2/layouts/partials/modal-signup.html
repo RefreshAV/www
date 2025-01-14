@@ -1,0 +1,49 @@
+<!-- layouts/partials/modal-signup.html -->
+<div class="modal fade" id="signupPopup" tabindex="-1" role="dialog" aria-labelledby="signupPopupLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Hate to be an annoying popup...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>                
+            </div>
+            <div class="modal-body">
+                <p>...but that is just what I am. If you dig what Refresh is throwing down, get on our mailing list. No better way to keep up with the magic.</p>
+                <form action="https://refreshannapolisvalley.us6.list-manage.com/subscribe/post" method="POST" novalidate>
+                    <input type="hidden" name="u" value="541eedc014006742efdd2ed17">
+                    <input type="hidden" name="id" value="ceb11b34fb">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="your@domain.com" name="EMAIL" required>
+                        <div class="invalid-feedback">Hello?</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Given Name" name="FNAME">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Family Name" name="LNAME">
+                    </div>
+                    <fieldset class="form-group">
+                        <legend>Interests</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="refresh-events-popup" name="group[13385][1]" checked>
+                            <label class="form-check-label" for="refresh-events-popup">Refresh Events &amp; Activities</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="cc-events-popup" name="group[13385][2]" checked>
+                            <label class="form-check-label" for="cc-events-popup">Creative Computing for Kids</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="hoist-events-popup" name="group[13385][4]" checked>
+                            <label class="form-check-label" for="hoist-events-popup">Hoist AV Teen Tech + Entrepreneurship</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-info">Don't Miss a Beat</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
