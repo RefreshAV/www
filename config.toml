@@ -1,7 +1,7 @@
 baseurl = "http://refreshannapolisvalley.com/"
 languageCode = "en-ca"
 title = "Refresh Annapolis Valley"
-theme = "f5"
+theme = "f5-2"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
@@ -74,11 +74,6 @@ project = "projects"
   name = "Blog"
   url = "post"
   weight = 6
-
-[[menu.main]]
-  name = "Support"
-  url = "support"
-  weight = 7
 
 [markup]
   [markup.goldmark]
