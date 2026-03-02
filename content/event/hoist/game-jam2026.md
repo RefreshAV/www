@@ -69,7 +69,7 @@ Here are a few examples of how you could use the theme:
 
 * **Originality:** It must be your own work (or your team's work).    
 
-* **Submission:** Share your game by generating a "Share Link" in MakeCode and sending it to us (below for).  Submissions need to be received before end of day April 30, 2026.    
+* **Submission:** Share your game by generating a "Share Link" in MakeCode and sending it to us.  Submissions need to be received before end of day April 30, 2026.    
 
 
 
