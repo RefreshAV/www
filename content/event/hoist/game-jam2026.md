@@ -99,8 +99,9 @@ Get points for scoring big across the following 4 categories:
 
  * **[Connor Bell](https://connorbell.ca/):** hi! i'm connor. i write code and make art. my code lives on SourceHut and Shadertoy. i'm a Senior Software Developer at Unity.
 
- * **2 More TBA**
+ * **[Tavis Bragg](https://cs.acadiau.ca/TavisBragg.html)** is a multidisciplinary educator and researcher who teaches digital society and computer science while leading innovative projects at the intersection of AI, education, and community wellbeing. His work blends technology, ethics, and creative design to build systems, from classrooms to games, that expand human agency in a rapidly changing digital world.
 
+* One more TBA
 
 
 ## 🛟 Need Help? ##
