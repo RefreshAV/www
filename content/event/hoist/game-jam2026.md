@@ -101,7 +101,9 @@ Get points for scoring big across the following 4 categories:
 
  * **[Tavis Bragg](https://cs.acadiau.ca/TavisBragg.html)** is a multidisciplinary educator and researcher who teaches digital society and computer science while leading innovative projects at the intersection of AI, education, and community wellbeing. His work blends technology, ethics, and creative design to build systems, from classrooms to games, that expand human agency in a rapidly changing digital world.
 
-* One more TBA
+* **[Jon Saklofske](https://english.acadiau.ca/dr-jon-saklofske.html)** Jon is a professor in Acadia's English and Theatre department, and interested in the ways that video games embody performative values and systems literacy, raise questions about agency and consequence, and can facilitate critical thinking through play.
+
+* **[Natalie J. Swain](https://history.acadiau.ca/faculty/natalie-swain-2.html)** Natalie is a scholar of Latin literature, narratology, and the reception of the ancient Mediterranean world in comics and video games. In video games, she is particularly interested in player agency, representations of gender, and intermedial narratology.
 
 
 ## 🛟 Need Help? ##
